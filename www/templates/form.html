@@ -1,0 +1,25 @@
+<ion-view title="form">
+	<ion-content padding="true">
+		<div id="form-container" class="row responsive-sm">
+
+			<!-- use ng-submit to catch the form submission and use our Angular function -->
+			<form id="centrifugeAppForm" class="col" ng-submit="processForm()">
+				<div class="form-data">
+					<div class="">
+						<h4>Your Selections:</h4>
+						<ul class="list">
+							<li class="option calm" ng-show="formData.process_control">Process Control: {{formData.process_control}}</li>
+							<li class="option calm" ng-show="formData.temperature_control">Temperature Control: {{formData.temperature_control}}</li>
+							<li class="option calm" ng-show="formData.max_gforce">Max G-Force: {{formData.max_gforce}}</li>
+							<li class="option calm" ng-show="formData.max_rpm">Max RPMs: {{formData.max_rpm}}</li>
+							<li class="option energized"><a ng-click="reloadRoute()" class="navbar-brand" title="home"  data-translate><strong>Start Over</strong></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div id="form-views" ui-view></div>
+
+			</form>
+		</div>
+	</ion-content>
+</ion-view>

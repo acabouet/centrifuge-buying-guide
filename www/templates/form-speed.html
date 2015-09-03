@@ -1,0 +1,110 @@
+
+<div>
+
+	<div class="centrifuge-option padding">
+		<h3>Centrifuge Speed</h3>
+
+		<h4>Choose G-Force or RPMs</h4>
+
+		<ul class="list">
+
+			<li class="item item-checkbox">
+				<label for="select_gforce" class="checkbox">
+					<input id="select_gforce" type="checkbox"
+					       name="select_gforce" class="form-control"
+					       ng-model="gforce">
+				</label>
+				<strong>G-Force</strong>
+
+			</li>
+			<li class="item check-element animate-show"
+				     ng-show="gforce">
+				<label class="item item-input item-select">
+					<div class="input-label">
+						<strong>Select Max Speed</strong>
+					</div>
+					<select id="max_gforce" name="max_gforce"
+					        class="form-control" ng-model="formData.max_gforce">
+						<option value="" selected="selected">- Select One -</option>
+						<option value="700">700</option>
+						<option value="1900">1900</option>
+						<option value="2000">2000</option>
+						<option value="4000">4000</option>
+						<option value="4185">4185</option>
+						<option value="4427">4427</option>
+						<option value="16000">16000</option>
+						<option value="16300">16300</option>
+						<option value="17310">17310</option>
+						<option value="17319">17319</option>
+						<option value="17135">17135</option>
+						<option value="20398">20398</option>
+						<option value="21200">21200</option>
+						<option value="21350">21350</option>
+						<option value="21380">21380</option>
+						<option value="26810">26810</option>
+						<option value="29068">29068</option>
+						<option value="65390">65390</option>
+					</select>
+				</label>
+			</li>
+
+		</ul>
+
+		<ul class="list">
+
+			<li class="item item-checkbox">
+				<label for="select_rpms" class="checkbox">
+					<input id="select_rpms" type="checkbox" name="select_rpms"
+					       class="form-control" ng-model="rpms">
+				</label>
+				<strong>RPMs</strong>
+
+			</li>
+			<li class="item check-element animate-show"
+			    ng-show="rpms">
+				<label class="item item-input item-select">
+					<div class="input-label">
+						Select Max Speed
+					</div>
+					<select id="max_rpm" name="max_rpm" class="form-control"
+					        ng-model="formData.max_rpm">
+						<option value="" selected="selected">- Select One -</option>
+						<option value="2500">2500</option>
+						<option value="4000">4000</option>
+						<option value="6000">6000</option>
+						<option value="6500">6500</option>
+						<option value="13300">13300</option>
+						<option value="13500">13500</option>
+						<option value="14000">14000</option>
+						<option value="15000">15000</option>
+						<option value="17000">17000</option>
+						<option value="18000">18000</option>
+						<option value="20000">20000</option>
+						<option value="30000">30000</option>
+					</select>
+				</label>
+			</li>
+
+		</ul>
+
+		<div class="list" ng-controller="rotorField">
+
+			<label class="item item-input item-select">
+				<div class="input-label">
+					Rotor Type:
+				</div>
+				<select ng-options="rotor.tid as rotor.name for rotor in rotorOptions"
+				        class="form-control" ng-model="formData.rotors">
+					<option value="">-- Select One --</option>
+				</select>
+			</label>
+
+		</div>
+
+		<a ui-sref="form.tubes" class="button button-block button-energized">
+			Continue to Tube Sizes <span class=""></span>
+		</a>
+
+	</div>
+</div>
+

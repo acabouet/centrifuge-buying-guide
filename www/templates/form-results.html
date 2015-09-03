@@ -1,0 +1,20 @@
+<div>
+	<div class="results">
+		<h2>Your Search Returned {{centrifuges.centrifuge.data.length}} Centrifuges.</h2>
+	</div>
+	<section class="centrifuge-results" class="row responsive-sm">
+		<div ng-repeat="centrifuge in centrifuges.centrifuge.data" class="col">
+			<hr>
+			<h3>{{centrifuge.node_title}}</h3>
+			<div class="image">
+				<span ng-bind-html="centrifuge.images"></span>
+			</div>
+			<div ng-bind-html="centrifuge.specifications" class="specs">
+			</div>
+			<a href="{{centrifuge.path}}" target="_blank" class="button button-block button-energized">
+				View {{centrifuge.node_title}}
+			</a>
+		</div>
+	</section>
+</div>
+

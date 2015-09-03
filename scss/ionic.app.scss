@@ -1,0 +1,172 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+$light:                           #f7f7f7;
+$stable:                          #f3f3f3;
+$positive:                        #003956;
+$calm:                            #68B6B9;
+$balanced:                        #66cc33;
+$energized:                       #7C225F;
+$assertive:                       #ef4e3a;
+$royal:                           #8a6de9;
+$dark:                            #444;
+
+$font-family-sans-serif:          "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$font-size-base:                  12px;
+$font-size-large:                 14px;
+$font-size-small:                 10px;
+$headings-font-weight:            600;
+
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts";
+
+// Include all of Ionic
+@import "../www/lib/ionic/scss/ionic";
+
+
+
+ion-content, #form-container {
+  text-align: center;
+  background: #f3f3f3;
+}
+
+.bar .bar-positive {
+
+}
+
+.welcome {
+  padding: 10px 2% 0 2%;
+  height: 100%;
+  .banner {
+	background: $positive url(../img/background-header.png) no-repeat bottom;
+	padding: 20px;
+	h1, h2 {
+	  color: white;
+	  margin-top: 0;
+	}
+  }
+}
+
+.results {
+  background: $positive url(../img/background-header.png) no-repeat bottom;
+  padding: 20px;
+  h1, h2 {
+	color: white;
+	margin-top: 0;
+  }
+}
+
+.form-data {
+  text-align: center;
+  .list {
+	li{
+	  display: inline-block;
+	}
+	.button {
+	  margin: 0.5em;
+	}
+  }
+}
+
+.option {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+  background: darken($stable, 15%);
+  color: $dark;
+  font-size: 100%;
+  position: relative;
+}
+
+.option.energized {
+  background: $energized;
+  color: white;
+}
+
+.centrifuge-option {
+  .item {
+	background: white;
+  }
+  .item.item-checkbox {
+	white-space: normal;
+	background: white;
+	color: $dark;
+  }
+
+  .item-select {
+	background: $calm;
+	border: 1px solid darken($calm, 5%);
+	.input-label {
+	  color: white;
+	}
+  }
+
+  .item-select select, .item-radio input:checked ~ .item-content {
+	background: $calm;
+	color: $light;
+  }
+
+  .item-select select {
+	border-radius: 0;
+  }
+  .item-select:after {
+	color: $light;
+  }
+  .checkbox input:checked:before, .checkbox input:checked + .checkbox-icon:before {
+	background: $calm;
+	border: 1px solid darken($calm, 5%);
+  }
+  .checkbox input:before, .checkbox .checkbox-icon:before {
+	border-color: darken($light, 35%);
+  }
+  i {
+	color: $light;
+  }
+
+  .tubeSizes .col {
+	display: inline-block;
+  }
+
+}
+
+.centrifuge-results {
+  .specs {
+	.tablefield {
+	  margin: 0 auto;
+	  width: 90%;
+	}
+	thead tr {
+	  background: $positive;
+	  color: white;
+	}
+	thead th {
+	  padding: 10px;
+	}
+	tbody tr {
+	  background: darken($stable, 15%);
+	  border-bottom: 1px solid darken($stable, 25%);
+	}
+	tbody td {
+	  padding: 5px;
+	}
+	.col_0 {
+	  font-weight: 600;
+	}
+  }
+}

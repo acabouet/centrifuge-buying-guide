@@ -1,0 +1,58 @@
+<div>
+	<div class="centrifuge-option padding">
+		<h3>Temperature Control</h3>
+
+		<h4>Choose from a refrigerated or non-refrigerated centrifuge.</h4>
+
+		<div class="list">
+
+			<label for="refrigerated" class="item item-radio">
+				<input id="refrigerated" type="radio" name="temperature_control" class="form-control" value="Refrigerated" ng-model="formData.temperature_control">
+				<div class="item-content">
+					<strong>Refrigerated</strong>
+				</div>
+				<i class="radio-icon ion-checkmark"></i>
+			</label>
+
+			<label for="non-refrigerated" class="item item-radio">
+				<input id="non-refrigerated" type="radio" name="temperature_control" class="form-control" value="Non-Refrigerated" ng-model="formData.temperature_control">
+				<div class="item-content">
+					<strong>Non-Refrigerated</strong>
+				</div>
+				<i class="radio-icon ion-checkmark"></i>
+			</label>
+		</div>
+
+	</div>
+
+	<div class="centrifuge-option padding">
+		<h3>Process Control</h3>
+
+		<h4>Choose from Digital or Analog Process Control</h4>
+
+		<div class="list">
+
+			<label for="digital" class="item item-radio">
+				<input id="digital" type="radio" name="process_control" class="form-control" value="Digital" ng-model="formData.process_control">
+				<div class="item-content">
+					<strong>Digital</strong>
+				</div>
+				<i class="radio-icon ion-checkmark"></i>
+			</label>
+
+			<label for="analog" class="item item-radio">
+				<input id="analog" type="radio" name="process_control" class="form-control" value="Analog" ng-model="formData.process_control">
+				<div class="item-content">
+					<strong>Analog</strong>
+				</div>
+				<i class="radio-icon ion-checkmark"></i>
+			</label>
+		</div>
+
+	</div>
+
+	<a ui-sref="form.speed" class="button button-block button-energized">
+		Continue to Centrifuge Speed Options <span class=""></span>
+	</a>
+</div>
+

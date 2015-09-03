@@ -1,0 +1,55 @@
+/*
+Syntax error: File to import not found or unreadable: /www/lib/ionic/scss/ionic.
+              Load path: /Volumes/Macintosh HD/Dropbox (betheoutlier)/Adrienne/nexus-production/docroot/sites/www.labnetinternational.com/centrifugeGuide/scss (DEPRECATED)
+        on line 22 of ionic.app.scss
+
+17: 
+18: // The path for our ionicons font files, relative to the built CSS in www/css
+19: $ionicons-font-path: "../lib/ionic/fonts" !default;
+20: 
+21: // Include all of Ionic
+22: @import "/www/lib/ionic/scss/ionic";
+
+Backtrace:
+ionic.app.scss:22
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/tree/import_node.rb:66:in `rescue in import'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/tree/import_node.rb:45:in `import'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/tree/import_node.rb:28:in `imported_file'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/tree/import_node.rb:37:in `css_import?'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/tree/visitors/perform.rb:283:in `visit_import'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/stack.rb:79:in `block in with_base'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/stack.rb:121:in `with_frame'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/stack.rb:79:in `with_base'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/tree/visitors/base.rb:52:in `map'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/tree/visitors/perform.rb:151:in `visit'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/tree/root_node.rb:36:in `css_tree'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/tree/root_node.rb:20:in `render'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/engine.rb:274:in `render'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/plugin/compiler.rb:414:in `update_stylesheet'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/plugin/compiler.rb:186:in `each'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/plugin/compiler.rb:393:in `on_file_changed'
+/adrienne.rvm/gems/ruby-2.1.1/gems/sass-3.3.6/lib/sass/plugin/compiler.rb:248:in `block in watch'
+/adrienne.rvm/gems/ruby-2.1.1/gems/listen-2.7.3/lib/listen/listener.rb:149:in `call'
+/adrienne.rvm/gems/ruby-2.1.1/gems/listen-2.7.3/lib/listen/listener.rb:149:in `block in _wait_for_changes'
+/adrienne.rvm/gems/ruby-2.1.1/gems/listen-2.7.3/lib/listen/listener.rb:138:in `loop'
+/adrienne.rvm/gems/ruby-2.1.1/gems/listen-2.7.3/lib/listen/listener.rb:138:in `_wait_for_changes'
+/adrienne.rvm/gems/ruby-2.1.1/gems/listen-2.7.3/lib/listen/listener.rb:42:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: /www/lib/ionic/scss/ionic.\A               Load path: /Volumes/Macintosh HD/Dropbox (betheoutlier)/Adrienne/nexus-production/docroot/sites/www.labnetinternational.com/centrifugeGuide/scss (DEPRECATED)\A         on line 22 of ionic.app.scss\A \A 17: \A 18: // The path for our ionicons font files, relative to the built CSS in www/css\A 19: $ionicons-font-path: \"../lib/ionic/fonts\" !default;\A 20: \A 21: // Include all of Ionic\A 22: @import \"/www/lib/ionic/scss/ionic\";"; }

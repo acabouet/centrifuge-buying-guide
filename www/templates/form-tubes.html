@@ -1,0 +1,23 @@
+<div class="centrifuge-option padding">
+
+	<div ng-controller="tubeSizes" class="tubeSizes">
+		<ion-checkbox ng-repeat="tubeSize in tubeSizes"
+		              ng-model="tubeSize.checked"
+		              ng-checked="tubeSize.checked"
+		              ng-value ="tubeSize.tid"
+				      class="col col-33">
+			{{tubeSize.name}}
+		</ion-checkbox>
+
+		<div class="box">
+			<ul ng-repeat="tube in (filteredTubes = (tubeSizes | filter:{checked:true}))">
+				<li><input type="hidden" ng-model="formData.tube_sizes" value="tube.tid"></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<a ui-sref="form.options" class="button button-block button-energized">
+		Continue to Additional Options <span class=""></span>
+	</a>
+</div>
